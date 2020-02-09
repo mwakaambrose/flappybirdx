@@ -67,8 +67,8 @@ public class TubeGreen {
     }
 
     public boolean collides(Rectangle player){
-        return player.overlaps(boundsBottom);
-        //return player.overlaps(boundsTop) || player.overlaps(boundsBottom);
+        //return player.overlaps(boundsBottom);
+        return player.overlaps(boundsTop) || player.overlaps(boundsBottom);
     }
 
     public void dispose(){

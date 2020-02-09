@@ -39,7 +39,7 @@ public class PlayDayState extends State {
 
     private Sound death, tubeCollision, scoreSound;
 
-    public PlayDayState(GameStateManager gsm) {
+    PlayDayState(GameStateManager gsm) {
         super(gsm);
         bird = new Bird(50, 200);
         cam.setToOrtho(false, FlappyBirdRed.WIDTH / 2, FlappyBirdRed.HEIGHT / 2);
